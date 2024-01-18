@@ -146,101 +146,6 @@ class Duolingo(object):
 
     def get_user_url(self):
         return "https://duolingo.com/users/%s" % self.username
-
-    def set_username(self, username):
-        self.username = username
-        self.user_data = Struct(**self._get_data())
-
-    def get_leaderboard(self, unit, before):
-        """
-        Get user's rank in the week in descending order, stream from
-        ``https://www.duolingo.com/friendships/leaderboard_activity?unit=week&_=time
-
-        :param unit: maybe week or month
-        :type unit: str
-        :param before: Datetime in format '2015-07-06 05:42:24'
-        :type before: Union[datetime, str]
-        :rtype: List
-        """
-        if not unit:
-            raise ValueError('Needs unit as argument (week or month)')
-
-        if not before:
-            raise ValueError('Needs str in Datetime format "%Y.%m.%d %H:%M:%S"')
-
-        if isinstance(before, datetime):
-            before = before.strftime("%Y.%m.%d %H:%M:%S")
-
-        url = 'https://www.duolingo.com/friendships/leaderboard_activity?unit={}&_={}'
-        url = url.format(unit, before)
-
-        self.leader_data = self._make_req(url).json()
-        data = []
-        for result in self.get_friends():
-            for value in self.leader_data['ranking']:
-                if result['id'] == int(value):
-                    temp = {'points': int(self.leader_data['ranking'][value]),
-                            'unit': unit,
-                            'id': result['id'],
-                            'username': result['username']}
-                    data.append(temp)
-
-        return sorted(data, key=lambda user: user['points'], reverse=True)
-
-    def buy_item(self, item_name, abbr):
-        url = 'https://www.duolingo.com/2017-06-30/users/{}/shop-items'
-        url = url.format(self.user_data.id)
-
-        data = {'itemName': item_name, 'learningLanguage': abbr}
-        request = self._make_req(url, data)
-
-        """
-        status code '200' indicates that the item was purchased
-        returns a text like: {"streak_freeze":"2017-01-10 02:39:59.594327"}
-        """
-
-        if request.status_code == 400:
-            resp_json = request.json()
-            if resp_json.get("error") == "ALREADY_HAVE_STORE_ITEM":
-                raise AlreadyHaveStoreItemException("Already equipped with {}.".format(item_name))
-            if resp_json.get("error") == "INSUFFICIENT_FUNDS":
-                raise InsufficientFundsException("Insufficient funds to purchase {}.".format(item_name))
-            raise DuolingoException(
-                "Duolingo returned an unknown error while trying to purchase {}: {}".format(
-                    item_name, resp_json.get("error")
-                )
-            )
-        if not request.ok:
-            # any other error:
-            raise DuolingoException("Not possible to buy item.")
-
-    def buy_streak_freeze(self):
-        """
-        figure out the users current learning language
-        use this one as parameter for the shop
-        """
-        lang = self.get_abbreviation_of(self.get_user_info()['learning_language_string'])
-        if lang is None:
-            raise DuolingoException('No learning language found')
-        try:
-            self.buy_item('streak_freeze', lang)
-            return True
-        except AlreadyHaveStoreItemException:
-            return False
-        
-    def buy_weekend_amulet(self):
-        """
-        figure out the users current learning language
-        use this one as parameter for the shop
-        """
-        lang = self.get_abbreviation_of(self.get_user_info()['learning_language_string'])
-        if lang is None:
-            raise DuolingoException('No learning language found')
-        try:
-            self.buy_item('weekend_amulet', lang)
-            return True
-        except AlreadyHaveStoreItemException:
-            return False
     
 
     def _switch_language(self, lang):
@@ -482,37 +387,6 @@ class Duolingo(object):
                 for topic in self.user_data.language_data[lang]['skills']
                 if topic['learned'] and topic['strength'] < 1.0]
 
-    def get_translations(self, words, source=None, target=None):
-        """
-        Get words' translations from
-        ``https://d2.duolingo.com/api/1/dictionary/hints/<source>/<target>?tokens=``<words>``
-
-        :param words: A single word or a list
-        :type: str or list of str
-        :param source: Source language as abbreviation
-        :type source: str
-        :param target: Destination language as abbreviation
-        :type target: str
-        :return: Dict with words as keys and translations as values
-        """
-        if not source:
-            source = self.user_data.ui_language
-        if not target:
-            target = list(self.user_data.language_data.keys())[0]
-
-        list_segments = self._segment_translations_list(words)
-        
-        results = dict()
-        for segment in list_segments:
-            print(segment)
-            try:
-                results = {**results, **self._get_raw_translations(segment, source, target)}
-            except Exception as e:
-                print(e)
-                pass
-            sleep(5)
-        return results
-
     def _segment_translations_list(self, words):
         # These seem to be the length limits before Duolingo's API rejects the request
         word_count_limit = 2000
@@ -538,17 +412,6 @@ class Duolingo(object):
         segments.append(segment)
         return segments
 
-    def _get_raw_translations(self, words, target, source):
-        word_parameter = json.dumps(words, separators=(',', ':'))
-        url = "https://d2.duolingo.com/api/1/dictionary/hints/{}/{}?tokens={}" \
-            .format(target, source, word_parameter)
-
-        print(url)
-        request = self.session.get(url)
-        try:
-            return request.json()
-        except ValueError:
-            raise DuolingoException('Could not get translations')
 
     def get_vocabulary(self, language_abbr=None):
         """Get overview of user's vocabulary in a language."""
@@ -709,34 +572,6 @@ class Duolingo(object):
             return request.json()
         except:
             raise Exception('Could not get word definition')
-
-    def get_daily_xp_progress(self):
-        daily_progress = self.get_data_by_user_id(["xpGoal", "xpGains", "streakData"])
-
-        if not daily_progress:
-            raise DuolingoException(
-                "Could not get daily XP progress for user \"{}\". Are you logged in as that user?".format(self.username)
-            )
-
-        # xpGains lists the lessons completed on the last day where lessons were done.
-        # We use the streakData.updatedTimestamp to get the last "midnight", and get lessons after that.
-        reported_timestamp = daily_progress['streakData']['updatedTimestamp']
-        reported_midnight = datetime.fromtimestamp(reported_timestamp)
-        midnight = datetime.fromordinal(datetime.today().date().toordinal())
-
-        # Sometimes the update is marked into the future. When this is the case
-        # we fall back on the system time for midnight.
-        time_discrepancy = min(midnight - reported_midnight, timedelta(0))
-        update_cutoff = round((reported_midnight + time_discrepancy).timestamp())
-
-        lessons = [lesson for lesson in daily_progress['xpGains'] if
-                lesson['time'] > update_cutoff]
-
-        return {
-            "xp_goal": daily_progress['xpGoal'],
-            "lessons_today": lessons,
-            "xp_today": sum(x['xp'] for x in lessons)
-        }
 
 
 attrs = [

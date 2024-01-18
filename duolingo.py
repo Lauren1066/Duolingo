@@ -2,10 +2,8 @@
 import re
 import json
 import random
-from datetime import datetime, timedelta
 from json import JSONDecodeError
 import requests
-from time import sleep
 
 __version__ = "0.5.4"
 __author__ = "Kartik Talwar"

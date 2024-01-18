@@ -1,37 +1,186 @@
-[{"Norwegian": "Kaffe", "English": "Coffee"},
-{"Norwegian": "Vann", "English": "Water"},
-{"Norwegian": "God", "English": "Good"},
-{"Norwegian": "Går Det Bra Med Deg", "English": "Are You Doing Alright?"},
-{"Norwegian": "Kvinnen", "English": "The Woman"},
-{"Norwegian": "Katt", "English": "Cat"},
-{"Norwegian": "Datteren", "English": "The Daughter"},
-{"Norwegian": "Ung", "English": "Young"},
-{"Norwegian": "Går Det Bra", "English": "Are You Alright?"},
-{"Norwegian": "God Morgen", "English": "Good Morning"},
-{"Norwegian": "Takk", "English": "Thank You/Please"},
-{"Norwegian": "Har", "English": "Have"},
-{"Norwegian": "Melk", "English": "Milk"},
-{"Norwegian": "Te", "English": "Tea"},
-{"Norwegian": "Mor", "English": "Mother"},
-{"Norwegian": "Og", "English": "And"},
-{"Norwegian": "Bra", "English": "Alright"},
-{"Norwegian": "Broren", "English": "The Brother"},
-{"Norwegian": "Morsom", "English": "Funny"},
-{"Norwegian": "Sønnen", "English": "The Son"},
-{"Norwegian": "Hvordan Går Det", "English": "How's It Going"},
-{"Norwegian": "Søster", "English": "Sister"},
-{"Norwegian": "Moren", "English": "The Mother"},
-{"Norwegian": "Beklager", "English": "Sorry"},
-{"Norwegian": "Mannen", "English": "The Man"},
-{"Norwegian": "Gutten", "English": "The Boy"},
-{"Norwegian": "Jenta", "English": "The Girl"},
-{"Norwegian": "Vin", "English": "Wine"},
-{"Norwegian": "God Dag", "English": "Good Afternoon"},
-{"Norwegian": "Kanskje", "English": "Maybe"},
-{"Norwegian": "Brød", "English": "Bread"},
-{"Norwegian": "Bror", "English": "Brother"},
-{"Norwegian": "Hallo", "English": "Hello"},
-{"Norwegian": "Faren", "English": "The Father"},
-{"Norwegian": "Hund", "English": "Dog"},
-{"Norwegian": "Hei", "English": "Hi"},
-{"Norwegian": "Far", "English": "Father"}]
+[
+    {
+        "Norwegian": "Beklager",
+        "English": "Sorry"
+    },
+    {
+        "Norwegian": "Bra",
+        "English": "Alright"
+    },
+    {
+        "Norwegian": "Bror",
+        "English": "Brother"
+    },
+    {
+        "Norwegian": "Broren",
+        "English": "The Brother"
+    },
+    {
+        "Norwegian": "Brød",
+        "English": "Bread"
+    },
+    {
+        "Norwegian": "Datteren",
+        "English": "The Daughter"
+    },
+    {
+        "Norwegian": "Egg",
+        "English": "Egg"
+    },
+    {
+        "Norwegian": "Egget",
+        "English": "The Egg"
+    },
+    {
+        "Norwegian": "Et",
+        "English": "And"
+    },
+    {
+        "Norwegian": "Far",
+        "English": "Father"
+    },
+    {
+        "Norwegian": "Faren",
+        "English": "The Father"
+    },
+    {
+        "Norwegian": "God",
+        "English": "Good"
+    },
+    {
+        "Norwegian": "God Dag",
+        "English": "Good Afternoon"
+    },
+    {
+        "Norwegian": "God Morgen",
+        "English": "Good Morning"
+    },
+    {
+        "Norwegian": "Godt",
+        "English": "Well"
+    },
+    {
+        "Norwegian": "Gutten",
+        "English": "The Boy"
+    },
+    {
+        "Norwegian": "Går Det Bra",
+        "English": "Are You Alright?"
+    },
+    {
+        "Norwegian": "Går Det Bra Med Deg",
+        "English": "Are You Doing Alright?"
+    },
+    {
+        "Norwegian": "Hallo",
+        "English": "Hello"
+    },
+    {
+        "Norwegian": "Har",
+        "English": "Have"
+    },
+    {
+        "Norwegian": "Hei",
+        "English": "Hi"
+    },
+    {
+        "Norwegian": "Hund",
+        "English": "Dog"
+    },
+    {
+        "Norwegian": "Hvordan Går Det",
+        "English": "How's It Going"
+    },
+    {
+        "Norwegian": "Jenta",
+        "English": "The Girl"
+    },
+    {
+        "Norwegian": "Kaffe",
+        "English": "Coffee"
+    },
+    {
+        "Norwegian": "Kaffen",
+        "English": "Coffees"
+    },
+    {
+        "Norwegian": "Kanskje",
+        "English": "Maybe"
+    },
+    {
+        "Norwegian": "Katt",
+        "English": "Cat"
+    },
+    {
+        "Norwegian": "Kvinnen",
+        "English": "The Woman"
+    },
+    {
+        "Norwegian": "Mannen",
+        "English": "The Man"
+    },
+    {
+        "Norwegian": "Med",
+        "English": "With"
+    },
+    {
+        "Norwegian": "Melk",
+        "English": "Milk"
+    },
+    {
+        "Norwegian": "Mor",
+        "English": "Mother"
+    },
+    {
+        "Norwegian": "Moren",
+        "English": "The Mother"
+    },
+    {
+        "Norwegian": "Morsom",
+        "English": "Funny"
+    },
+    {
+        "Norwegian": "Og",
+        "English": "And"
+    },
+    {
+        "Norwegian": "Ost",
+        "English": "Cheese"
+    },
+    {
+        "Norwegian": "Pizza",
+        "English": "Pizza"
+    },
+    {
+        "Norwegian": "Sønnen",
+        "English": "The Son"
+    },
+    {
+        "Norwegian": "Søster",
+        "English": "Sister"
+    },
+    {
+        "Norwegian": "Takk",
+        "English": "Thank You/Please"
+    },
+    {
+        "Norwegian": "Te",
+        "English": "Tea"
+    },
+    {
+        "Norwegian": "Ung",
+        "English": "Young"
+    },
+    {
+        "Norwegian": "Vann",
+        "English": "Water"
+    },
+    {
+        "Norwegian": "Varm",
+        "English": "Warm"
+    },
+    {
+        "Norwegian": "Vin",
+        "English": "Wine"
+    }
+]

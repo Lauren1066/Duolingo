@@ -7,16 +7,25 @@ import requests
 import inspect
 import json
 import logging
+import deepl
 
 words_to_ignore = ["det", "names", "en"]
 
 load_dotenv()
 
+os.system("python3 duolingo.py")
+
+def translate_norwegian_to_english(text, auth_key):
+    translator = deepl.Translator(auth_key)
+    result = translator.translate_text(text, target_lang="EN-US", source_lang="NB")
+    return result.text
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s\n')
 
 username = os.environ.get('DUOLINGO_USER')
 password = os.environ.get('DUOLINGO_PASSWORD')
-jwt = os.environ.get('DUOLINGO_JWT')    
+jwt = os.environ.get('DUOLINGO_JWT')   
+auth_key = os.environ.get("auth_key") 
 
 if username is None:
     raise Exception("Environment variable DUOLINGO_USERNAME is not set")
@@ -59,25 +68,50 @@ try:
     
     translations = []
 
+
+
+
     for norwegian_word in known_words:
         if norwegian_word in words_to_ignore:
             continue
 
         if norwegian_word.lower() in existing_norwegian_words:
             continue
-        translated_text = input(f"What is the translation for {norwegian_word} (or type ignore): ")
+
+        translated_text = translate_norwegian_to_english(norwegian_word, auth_key)
         
-        if translated_text.lower() != 'ignore':
-            translations.append({'Norwegian': norwegian_word.title(), 'English': translated_text.title()})
+        translations.append({'Norwegian': norwegian_word.title(), 'English': translated_text.title()})
         
         logging.debug("Translated: %s -> %s", norwegian_word, translated_text)
 
     for translation in translations:
-        longging.info(translation)
+        logging.info(translation)
     if len(translations) > 0:
-        with open('words_translations.json', 'w', encoding='utf-8') as file:
+        with open('words_translations.json', 'a', encoding='utf-8') as file:
             json.dump(translations, file, ensure_ascii=False, indent=4)
 
 except Exception as e:
     logging.error("Error during translation process:", str(e))
     raise
+
+
+def fix_and_sort_json(file_path):
+    # Read the existing data from the file
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    # Ensure all entries are in the correct format and sort them
+    fixed_data = [
+        {'Norwegian': entry['Norwegian'], 'English': entry['English']}
+        for entry in data
+        if isinstance(entry, dict) and 'Norwegian' in entry and 'English' in entry
+    ]
+    fixed_data.sort(key=lambda x: x['Norwegian'])
+
+    # Write the fixed and sorted data back to the file
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(fixed_data, file, indent=4, ensure_ascii=False)
+
+# Usage
+file_path = 'words_translations.json'
+fix_and_sort_json(file_path)

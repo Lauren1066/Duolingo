@@ -98,7 +98,6 @@
         background-color: #367c39;
     }
 </style>
-
 </head>
 <body>
   <header>
@@ -126,7 +125,7 @@
           if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
           }
-          const words = await response.json();
+          const words = await response.json()
           const randomWord = words[Math.floor(Math.random() * words.length)];
           
           const flashcard = document.getElementById('flashcard');

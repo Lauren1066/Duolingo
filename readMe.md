@@ -68,4 +68,7 @@ This script fetches the latest words from Duolingo, translates them, and updates
 ## Contributing
 
 Contributions to the Flashcard Website Project are welcome. Please feel free to fork the repository, make improvements or add new features, and submit a pull request.
+
+techselect was here
+
 ---

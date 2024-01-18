@@ -102,8 +102,6 @@ class Duolingo(object):
         login_url = "https://www.duolingo.com/login"
         data = {"login": self.username, "password": self.password}
         request = self._make_req(login_url, data)
-        
-        print(f"Status Code: {request.status_code}")
 
         
         try:

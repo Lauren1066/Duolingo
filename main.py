@@ -6,16 +6,13 @@ from dotenv import load_dotenv
 import requests
 import inspect
 import json
-import googletrans
 import logging
 
 words_to_ignore = ["det", "names", "en"]
 
 load_dotenv()
 
-translator = googletrans.Translator()
-
-load_dotenv() 
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s\n')
 
 username = os.environ.get('DUOLINGO_USER')
 password = os.environ.get('DUOLINGO_PASSWORD')
@@ -35,36 +32,20 @@ try:
 
   lingo  = duolingo.Duolingo(username, jwt=jwt)
 except duolingo.DuolingoException as e:
-    print(f"Duolingo API returned an error: {e}")
+    logging.error(f"Duolingo API returned an error: {e}")
 except requests.exceptions.RequestException as e:
-    print(f"Request failed: {e}")
+    logging.error(f"Request failed: {e}")
 except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+    logging.error(f"An unexpected error occurred: {e}")
     
-print("---InfoPart---Start---")
-streak_info = lingo.get_streak_info()
-print(f"{username}: get_streak_info for {streak_info}")
 MyInfo = lingo.get_user_info()
-print(f"{username}: Info ID: {MyInfo['id']}")
-print(f"{username}: Info fullname: {MyInfo['fullname']}")
-print(f"{username}: Info location: {MyInfo['location']}")
-print(f"{username}: Info contribution_points: {MyInfo['contribution_points']}")
-print(f"{username}: Info created: {MyInfo['created'].strip()}")
-print(f"{username}: Info learning_language_string: {MyInfo['learning_language_string']}")
-print(f"{username}: streak_freeze: {lingo.__dict__['user_data'].__dict__['tracking_properties']['num_item_streak_freeze']}")
-print(f"{username}: rupee_wager: {lingo.__dict__['user_data'].__dict__['tracking_properties']['has_item_rupee_wager']}")
-user_data_resp = lingo.get_data_by_user_id()
-print(f"{username}: Info lingots: {user_data_resp['lingots']}")
-print(f"{username}: Info totalXp: {user_data_resp['totalXp']}")
-print(f"{username}: Info monthlyXp: {user_data_resp['monthlyXp']}")
-print(f"{username}: Info weeklyXp: {user_data_resp['weeklyXp']}")
-print(f"{username}: Info gems: {user_data_resp['gems']}")
-print(f"{username}: Info currentCourse.crowns: {user_data_resp['currentCourse']['crowns']}")
-
+logging.info(f"{username}: Info ID: {MyInfo['id']}")
+logging.info(f"{username}: Info fullname: {MyInfo['fullname']}")
 
 try:
     known_words = lingo.get_known_words('nb')
-    print("Known words fetched:", known_words)
+    logging.info(f"Known words fetched: {known_words}")
+
     
     try:
         with open('words_translations.json', 'r', encoding='utf-8') as file:
@@ -73,7 +54,7 @@ try:
         existing_translations = []
 
     existing_norwegian_words = set([entry['Norwegian'].lower() for entry in existing_translations])
-    print("Already translated words:", existing_norwegian_words)
+    logging.info(f"Already translated words: {existing_norwegian_words}")
 
     
     translations = []
@@ -92,7 +73,7 @@ try:
         logging.debug("Translated: %s -> %s", norwegian_word, translated_text)
 
     for translation in translations:
-        print(translation)
+        longging.info(translation)
     if len(translations) > 0:
         with open('words_translations.json', 'w', encoding='utf-8') as file:
             json.dump(translations, file, ensure_ascii=False, indent=4)

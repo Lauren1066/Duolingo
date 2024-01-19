@@ -4,6 +4,7 @@ import json
 import random
 from json import JSONDecodeError
 import requests
+import logging
 
 __version__ = "0.5.4"
 __author__ = "Kartik Talwar"
@@ -105,7 +106,7 @@ class Duolingo(object):
         try:
             attempt = request.json()
         except json.JSONDecodeError as e:
-            print(f"JSON decoding failed: {e}")
+            logging.error(f"JSON decoding failed: {e}")
             raise DuolingoException("Failed to decode JSON from server response")
     
         if "failure" not in attempt:

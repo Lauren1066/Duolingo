@@ -1,11 +1,19 @@
 [
     {
+        "Norwegian": "Å",
+        "English": "Oh"
+    },
+    {
+        "Norwegian": "Bare Hyggelig",
+        "English": "You're Welcome."
+    },
+    {
         "Norwegian": "Beklager",
         "English": "Sorry"
     },
     {
         "Norwegian": "Bra",
-        "English": "Alright"
+        "English": "Good"
     },
     {
         "Norwegian": "Bror",
@@ -13,15 +21,31 @@
     },
     {
         "Norwegian": "Broren",
-        "English": "The Brother"
+        "English": "The Brothers"
     },
     {
         "Norwegian": "Brød",
         "English": "Bread"
     },
     {
+        "Norwegian": "Dag",
+        "English": "Day"
+    },
+    {
         "Norwegian": "Datteren",
         "English": "The Daughter"
+    },
+    {
+        "Norwegian": "Det",
+        "English": "It"
+    },
+    {
+        "Norwegian": "Din",
+        "English": "Your"
+    },
+    {
+        "Norwegian": "Du",
+        "English": "You"
     },
     {
         "Norwegian": "Egg",
@@ -30,6 +54,18 @@
     {
         "Norwegian": "Egget",
         "English": "The Egg"
+    },
+    {
+        "Norwegian": "Eller",
+        "English": "Or"
+    },
+    {
+        "Norwegian": "En",
+        "English": "A"
+    },
+    {
+        "Norwegian": "Er",
+        "English": "Is"
     },
     {
         "Norwegian": "Et",
@@ -44,12 +80,32 @@
         "English": "The Father"
     },
     {
+        "Norwegian": "Fisk",
+        "English": "Fish"
+    },
+    {
+        "Norwegian": "Fisken",
+        "English": "Fish"
+    },
+    {
+        "Norwegian": "For",
+        "English": "For"
+    },
+    {
         "Norwegian": "God",
-        "English": "Good"
+        "English": "God"
     },
     {
         "Norwegian": "God Dag",
         "English": "Good Afternoon"
+    },
+    {
+        "Norwegian": "God Helg",
+        "English": "Good Weekend"
+    },
+    {
+        "Norwegian": "God Kveld",
+        "English": "Good Evening"
     },
     {
         "Norwegian": "God Morgen",
@@ -72,28 +128,76 @@
         "English": "Are You Doing Alright?"
     },
     {
+        "Norwegian": "Ha Det",
+        "English": "Goodbye"
+    },
+    {
+        "Norwegian": "Ha Det Bra",
+        "English": "Goodbye"
+    },
+    {
         "Norwegian": "Hallo",
         "English": "Hello"
     },
     {
+        "Norwegian": "Han",
+        "English": "He"
+    },
+    {
         "Norwegian": "Har",
-        "English": "Have"
+        "English": "Has"
     },
     {
         "Norwegian": "Hei",
         "English": "Hi"
     },
     {
+        "Norwegian": "Her",
+        "English": "Here"
+    },
+    {
+        "Norwegian": "Høy",
+        "English": "Tall"
+    },
+    {
+        "Norwegian": "Hun",
+        "English": "She"
+    },
+    {
         "Norwegian": "Hund",
         "English": "Dog"
     },
     {
-        "Norwegian": "Hvordan Går Det",
-        "English": "How's It Going"
+        "Norwegian": "Hunden",
+        "English": "The Dog"
     },
     {
-        "Norwegian": "Jenta",
-        "English": "The Girl"
+        "Norwegian": "Hvor",
+        "English": "Where"
+    },
+    {
+        "Norwegian": "Hvordan Går Det",
+        "English": "How Are You Doing"
+    },
+    {
+        "Norwegian": "Interessant",
+        "English": "Interesting"
+    },
+    {
+        "Norwegian": "Ja",
+        "English": "Yes"
+    },
+    {
+        "Norwegian": "Jeg",
+        "English": "I"
+    },
+    {
+        "Norwegian": "The Jenta",
+        "English": "Girl"
+    },
+    {
+        "Norwegian": "Jobb",
+        "English": "Job"
     },
     {
         "Norwegian": "Kaffe",
@@ -104,20 +208,44 @@
         "English": "The Coffee"
     },
     {
+        "Norwegian": "Kald",
+        "English": "Cold"
+    },
+    {
         "Norwegian": "Kanskje",
-        "English": "Maybe"
+        "English": "Perhaps"
     },
     {
         "Norwegian": "Katt",
         "English": "Cat"
     },
     {
+        "Norwegian": "Katten",
+        "English": "The Cat"
+    },
+    {
         "Norwegian": "Kvinnen",
         "English": "The Woman"
     },
     {
+        "Norwegian": "Lege",
+        "English": "Doctor"
+    },
+    {
+        "Norwegian": "Legen",
+        "English": "The Doctor"
+    },
+    {
+        "Norwegian": "Lærer",
+        "English": "Teacher"
+    },
+    {
         "Norwegian": "Mannen",
         "English": "The Man"
+    },
+    {
+        "Norwegian": "Maten",
+        "English": "The Food"
     },
     {
         "Norwegian": "Med",
@@ -128,16 +256,40 @@
         "English": "Milk"
     },
     {
+        "Norwegian": "Men",
+        "English": "But"
+    },
+    {
+        "Norwegian": "Meny",
+        "English": "Menu"
+    },
+    {
+        "Norwegian": "Menyen",
+        "English": "The Menu"
+    },
+    {
+        "Norwegian": "Mer",
+        "English": "More"
+    },
+    {
+        "Norwegian": "Min",
+        "English": "My"
+    },
+    {
         "Norwegian": "Mor",
         "English": "Mother"
     },
     {
         "Norwegian": "Moren",
-        "English": "The Mother"
+        "English": "The mother"
     },
     {
         "Norwegian": "Morsom",
         "English": "Funny"
+    },
+    {
+        "Norwegian": "Nei",
+        "English": "No"
     },
     {
         "Norwegian": "Og",
@@ -148,8 +300,60 @@
         "English": "Cheese"
     },
     {
+        "Norwegian": "Osten",
+        "English": "The Cheese"
+    },
+    {
         "Norwegian": "Pizza",
         "English": "Pizza"
+    },
+    {
+        "Norwegian": "Pizzaen",
+        "English": "The Pizza"
+    },
+    {
+        "Norwegian": "Professor",
+        "English": "Professor"
+    },
+    {
+        "Norwegian": "Regningen",
+        "English": "The Bill"
+    },
+    {
+        "Norwegian": "Restaurant",
+        "English": "Restaurant"
+    },
+    {
+        "Norwegian": "Restauranten",
+        "English": "The Restaurant"
+    },
+    {
+        "Norwegian": "Salaten",
+        "English": "The Salad"
+    },
+    {
+        "Norwegian": "Smart",
+        "English": "Smart"
+    },
+    {
+        "Norwegian": "Snill",
+        "English": "Nice"
+    },
+    {
+        "Norwegian": "Sønnen",
+        "English": "The Son"
+    },
+    {
+        "Norwegian": "Stressende",
+        "English": "Stressful"
+    },
+    {
+        "Norwegian": "Student",
+        "English": "Student"
+    },
+    {
+        "Norwegian": "Sykepleier",
+        "English": "Nurse"
     },
     {
         "Norwegian": "Sønnen",
@@ -160,67 +364,59 @@
         "English": "Sister"
     },
     {
+        "Norwegian": "Søsteren",
+        "English": "The Sister"
+    },
+    {
         "Norwegian": "Takk",
-        "English": "Thank You/Please"
+        "English": "Thanks"
     },
     {
         "Norwegian": "Te",
         "English": "Tea"
     },
     {
+        "Norwegian": "Teen",
+        "English": "The Tea"
+    },
+    {
+        "Norwegian": "Tusen Takk",
+        "English": "Thank You Very Much"
+    },
+    {
         "Norwegian": "Ung",
         "English": "Young"
+    },
+    {
+        "Norwegian": "Unnskyld",
+        "English": "Sorry"
+    },
+    {
+        "Norwegian": "Vaer Sa Snill",
+        "English": "Please"
     },
     {
         "Norwegian": "Vann",
         "English": "Water"
     },
     {
+        "Norwegian": "Vanskelig",
+        "English": "Difficult"
+    },
+    {
         "Norwegian": "Varm",
         "English": "Warm"
     },
     {
+        "Norwegian": "Veldig",
+        "English": "Very"
+    },
+    {
+        "Norwegian": "Velkommen",
+        "English": "Welcome"
+    },
+    {
         "Norwegian": "Vin",
         "English": "Wine"
-    },
-    {
-        "Norwegian": "Lærer",
-        "English": "Teacher"
-    },
-    {
-        "Norwegian": "Din",
-        "English": "Your"
-    },
-    {
-        "Norwegian": "Sykepleier",
-        "English": "Nurse"
-    },
-    {
-        "Norwegian": "Hun",
-        "English": "Their"
-    },
-    {
-        "Norwegian": "Professor",
-        "English": "Professor"
-    },
-    {
-        "Norwegian": "Men",
-        "English": "But"
-    },
-    {
-        "Norwegian": "Lege",
-        "English": "Doctor"
-    },
-    {
-        "Norwegian": "Student",
-        "English": "Student"
-    },
-    {
-        "Norwegian": "Han",
-        "English": "He"
-    },
-    {
-        "Norwegian": "Vanskelig",
-        "English": "Difficult"
     }
 ]

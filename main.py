@@ -100,17 +100,27 @@ def fix_and_sort_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
 
-    # Ensure all entries are in the correct format and sort them
+    # Ensure all entries are in the correct format
     fixed_data = [
         {'Norwegian': entry['Norwegian'], 'English': entry['English']}
         for entry in data
         if isinstance(entry, dict) and 'Norwegian' in entry and 'English' in entry
     ]
+
     fixed_data.sort(key=lambda x: x['Norwegian'])
 
-    # Write the fixed and sorted data back to the file
+    data.extend(fixed_data)
+
+    seen = set()
+    unique_data = []
+    for entry in data:
+        identifier = (entry['Norwegian'], entry['English'])
+        if identifier not in seen:
+            seen.add(identifier)
+            unique_data.append(entry)
+
     with open(file_path, 'w', encoding='utf-8') as file:
-        json.dump(fixed_data, file, indent=4, ensure_ascii=False)
+        json.dump(unique_data, file, indent=4, ensure_ascii=False)
 
 # Usage
 file_path = 'words_translations.json'

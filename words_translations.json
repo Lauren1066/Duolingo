@@ -33,7 +33,7 @@
     },
     {
         "Norwegian": "Et",
-        "English": "And"
+        "English": "An"
     },
     {
         "Norwegian": "Far",
@@ -57,7 +57,7 @@
     },
     {
         "Norwegian": "Godt",
-        "English": "Well"
+        "English": "Good"
     },
     {
         "Norwegian": "Gutten",
@@ -182,5 +182,45 @@
     {
         "Norwegian": "Vin",
         "English": "Wine"
+    },
+    {
+        "Norwegian": "Lærer",
+        "English": "Teacher"
+    },
+    {
+        "Norwegian": "Din",
+        "English": "Your"
+    },
+    {
+        "Norwegian": "Sykepleier",
+        "English": "Nurse"
+    },
+    {
+        "Norwegian": "Hun",
+        "English": "Their"
+    },
+    {
+        "Norwegian": "Professor",
+        "English": "Professor"
+    },
+    {
+        "Norwegian": "Men",
+        "English": "But"
+    },
+    {
+        "Norwegian": "Lege",
+        "English": "Doctor"
+    },
+    {
+        "Norwegian": "Student",
+        "English": "Student"
+    },
+    {
+        "Norwegian": "Han",
+        "English": "He"
+    },
+    {
+        "Norwegian": "Vanskelig",
+        "English": "Difficult"
     }
 ]

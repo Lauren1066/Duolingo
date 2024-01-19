@@ -117,16 +117,16 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const nextWordBtn = document.getElementById('nextWordBtn');
-    nextWordBtn.addEventListener('click', getRandomWord);
-
-    async function getRandomWord() {
+    nextWordBtn.addEventListener('click', getNextWord);
+    let tracker = 0;
+    async function getNextWord() {
       try {
           const response = await fetch('words_translations.json');
           if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
           }
           const words = await response.json()
-          const randomWord = words[Math.floor(Math.random() * words.length)];
+          const nextWord = words[tracker];
           
           const flashcard = document.getElementById('flashcard');
           const norwegianWordElement = document.getElementById('wordNorwegian');
@@ -138,8 +138,9 @@
           englishWordElement.style.display = 'none';
   
           // Set the new words
-          norwegianWordElement.textContent = randomWord.Norwegian;
-          englishWordElement.textContent = randomWord.English;
+          norwegianWordElement.textContent = nextWord.Norwegian;
+          englishWordElement.textContent = nextWord.English;
+          tracker++;
           
       } catch (error) {
           console.error('Could not fetch words: ', error);

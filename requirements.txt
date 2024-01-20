@@ -5,7 +5,6 @@ charset-normalizer==3.3.2
 click-aliases==1.0.1
 deep-translator==1.11.4
 docopt==0.6.2
-googletrans==3.0.0
 h11==0.9.0
 h2==3.2.0
 hpack==3.0.0
@@ -14,9 +13,6 @@ httpcore==0.9.1
 httpx==0.13.3
 hyperframe==5.2.0
 idna==2.10
-pipreqs==0.4.13
-plex2mix==0.1.0
-PlexAPI==4.15.7
 PyYAML==6.0.1
 requests==2.31.0
 rfc3986==1.5.0

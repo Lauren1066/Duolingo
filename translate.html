@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Norwegian to English</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            color: #f5f5f5;  
+            background-position: center center;
+            background-size: cover;
+            text-shadow: 
+            -1px -1px 0 #000,  
+             1px -1px 0 #000,
+             -1px 1px 0 #000,
+             1px 1px 0 #000,
+             -2px -2px 0 #000,  
+             2px -2px 0 #000,
+             -2px 2px 0 #000,
+             2px 2px 0 #000;
+    }
+
+
+        .translation-container {
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+          width: calc(100% - 20px); 
+          padding: 10px;
+          margin: 10px 0;
+          border-radius: 10px;
+          border: 2px solid #000000; 
+          box-sizing: border-box; 
+      }
+      
+      
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: rgb(17, 31, 39);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #367c39;
+        }
+
+        #feedback {
+            margin-top: 20px;
+        }
+
+        .special-characters {
+          margin-top: 10px;
+      }
+      
+      .char-btn {
+          padding: 5px 10px;
+          margin-right: 5px;
+          font-size: 18px;
+          cursor: pointer;
+          background-color: #f5f5f5;
+          color: #333;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      
+      .char-btn:hover {
+          background-color: #e1e1e1;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="translation-container">
+        <h1>Translate Norwegian to English</h1>
+        <form id="translationForm">
+            <input type="text" id="wordNorwegian" placeholder="Norwegian word" autocomplete="off" readonly>
+            <input type="text" id="userTranslation" placeholder="Your translation" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p id="feedback"></p>
+        <div class="special-characters">
+          <button class="char-btn" type="button">ø</button>
+          <button class="char-btn" type="button">æ</button>
+          <button class="char-btn" type="button">å</button>
+      </div>      
+    </div>
+    <script>
+      let words = [];
+      let wordIndex = 0;
+  
+      document.addEventListener('DOMContentLoaded', async function() {
+          const response = await fetch('words_translations.json');
+          words = await response.json();
+          loadNewWord();
+  
+          document.getElementById('translationForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              const userTranslation = document.getElementById('userTranslation').value.trim().toLowerCase();
+              const correctTranslation = words[wordIndex].English.trim().toLowerCase();
+              
+              const feedbackElement = document.getElementById('feedback');
+              if (userTranslation === correctTranslation) {
+                  feedbackElement.textContent = 'Correct!';
+                  feedbackElement.style.color = 'green';
+                  loadNewWord();
+              } else {
+                  feedbackElement.textContent = `Incorrect. The correct translation is "${words[wordIndex].English}".`;
+                  feedbackElement.style.color = 'red';
+              }
+          });
+
+          const charButtons = document.querySelectorAll('.char-btn');
+          charButtons.forEach(button => {
+              button.addEventListener('click', function() {
+                  insertAtCursor(document.getElementById('userTranslation'), button.textContent);
+              });
+          });
+      });
+  
+      function loadNewWord() {
+          wordIndex = Math.floor(Math.random() * words.length);
+          document.getElementById('wordNorwegian').value = words[wordIndex].Norwegian;
+          document.getElementById('userTranslation').value = ''; 
+          document.getElementById('feedback').textContent = ''; 
+      }
+
+      function insertAtCursor(input, textToInsert) {
+        const startPos = input.selectionStart;
+        const endPos = input.selectionEnd;
+    
+        input.value = input.value.substring(0, startPos) + textToInsert + input.value.substring(endPos);
+    
+        input.selectionStart = input.selectionEnd = startPos + textToInsert.length;
+    }
+  </script>
+  
+</body>
+</html>

@@ -40,7 +40,8 @@ known_mispelled_words = [
     "vaer",
     "sonnen",
     "hoy",
-    "a" # Should be Ã
+    "a", # Should be Ã
+    "horer"
 ]
 
 

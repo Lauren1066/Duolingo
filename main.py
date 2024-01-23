@@ -39,7 +39,8 @@ known_mispelled_words = [
     "ol",
     "vaer",
     "sonnen",
-    "hoy"
+    "hoy",
+    "A" # Should be Ã
 ]
 
 

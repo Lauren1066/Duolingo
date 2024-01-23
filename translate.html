@@ -120,7 +120,7 @@
           document.getElementById('translationForm').addEventListener('submit', function(event) {
               event.preventDefault();
               const userTranslation = document.getElementById('userTranslation').value.trim().toLowerCase();
-              const correctTranslation = words[wordIndex].English.trim().toLowerCase();
+              const correctTranslation = getEnglishTranslation(words[wordIndex]).trim().toLowerCase();
               
               const feedbackElement = document.getElementById('feedback');
               if (userTranslation === correctTranslation) {
@@ -128,7 +128,7 @@
                   feedbackElement.style.color = 'green';
                   loadNewWord();
               } else {
-                  feedbackElement.textContent = `Incorrect. The correct translation is "${words[wordIndex].English}".`;
+                  feedbackElement.textContent = `Incorrect. The correct translation is "${getEnglishTranslation(words[wordIndex])}".`;
                   feedbackElement.style.color = 'red';
               }
           });
@@ -140,7 +140,16 @@
           document.getElementById('userTranslation').value = ''; 
           document.getElementById('feedback').textContent = ''; 
       }
+
+      function getEnglishTranslation(wordObj) {
+          let translation = wordObj.English;
+          if (wordObj.Type) {
+              translation += ` (${wordObj.Type})`;
+          }
+          return translation;
+      }
   </script>
   
 </body>
 </html>
+

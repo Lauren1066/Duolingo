@@ -141,11 +141,13 @@
     },
     {
         "Norwegian": "Ha Det",
-        "English": "Goodbye"
+        "English": "Goodbye",
+        "Type": "Casual"
     },
     {
         "Norwegian": "Ha Det Bra",
-        "English": "Goodbye"
+        "English": "Goodbye",
+        "Type": "Formal"
     },
     {
         "Norwegian": "Hallo",

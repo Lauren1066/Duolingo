@@ -10,7 +10,7 @@ def run_script():
         subprocess.run(["python", "main.py"], check=True)
         time.sleep(600)
 
-httpd = http.server.HTTPServer(('localhost', 8000), RequestHandler)
+httpd = http.server.HTTPServer(('', 27103), RequestHandler)
 threading.Thread(target=run_script, daemon=True).start()
-print("Serving on port 8000")
+print("Serving on port 27103")
 httpd.serve_forever()

@@ -1,0 +1,6 @@
+@echo off
+echo Installing Python...
+winget install Python
+echo Moving to installing requirements...
+pip install -r requirements.txt
+echo If no (serious) errors were returned, you are ready to go!

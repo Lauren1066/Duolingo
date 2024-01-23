@@ -1,11 +1,19 @@
 [
     {
-        "Norwegian": "Å",
-        "English": "Oh"
+        "Norwegian": "A",
+        "English": "A"
+    },
+    {
+        "Norwegian": "Aldri",
+        "English": "Never"
+    },
+    {
+        "Norwegian": "Av Og Til",
+        "English": "Occasionally"
     },
     {
         "Norwegian": "Bare Hyggelig",
-        "English": "You're Welcome"
+        "English": "You'Re Welcome"
     },
     {
         "Norwegian": "Beklager",
@@ -92,6 +100,10 @@
         "English": "Too"
     },
     {
+        "Norwegian": "Gitar",
+        "English": "Guitar"
+    },
+    {
         "Norwegian": "God",
         "English": "Good"
     },
@@ -156,8 +168,8 @@
         "English": "Here"
     },
     {
-        "Norwegian": "Høy",
-        "English": "Tall"
+        "Norwegian": "Horer",
+        "English": "Whore"
     },
     {
         "Norwegian": "Hun",
@@ -180,6 +192,14 @@
         "English": "How Are You?"
     },
     {
+        "Norwegian": "Hører",
+        "English": "Listens"
+    },
+    {
+        "Norwegian": "Høy",
+        "English": "Tall"
+    },
+    {
         "Norwegian": "Interessant",
         "English": "Interesting"
     },
@@ -198,6 +218,10 @@
     {
         "Norwegian": "Jobb",
         "English": "Job"
+    },
+    {
+        "Norwegian": "Jobben",
+        "English": "Jobs"
     },
     {
         "Norwegian": "Kaffe",
@@ -228,6 +252,10 @@
         "English": "The Woman"
     },
     {
+        "Norwegian": "Lager",
+        "English": "Lower"
+    },
+    {
         "Norwegian": "Lege",
         "English": "Doctor"
     },
@@ -236,8 +264,16 @@
         "English": "The Doctor"
     },
     {
+        "Norwegian": "Leser",
+        "English": "Reader"
+    },
+    {
         "Norwegian": "Lærer",
         "English": "Teacher"
+    },
+    {
+        "Norwegian": "Maler",
+        "English": "Painter"
     },
     {
         "Norwegian": "Mannen",
@@ -281,15 +317,23 @@
     },
     {
         "Norwegian": "Moren",
-        "English": "The mother"
+        "English": "The Mother"
     },
     {
         "Norwegian": "Morsom",
         "English": "Funny"
     },
     {
+        "Norwegian": "Musikk",
+        "English": "Music"
+    },
+    {
         "Norwegian": "Nei",
         "English": "No"
+    },
+    {
+        "Norwegian": "Ofte",
+        "English": "Often"
     },
     {
         "Norwegian": "Og",
@@ -304,6 +348,10 @@
         "English": "The Cheese"
     },
     {
+        "Norwegian": "Pa",
+        "English": "Pa"
+    },
+    {
         "Norwegian": "Pizza",
         "English": "Pizza"
     },
@@ -314,6 +362,10 @@
     {
         "Norwegian": "Professor",
         "English": "Professor"
+    },
+    {
+        "Norwegian": "På",
+        "English": "To"
     },
     {
         "Norwegian": "Regningen",
@@ -340,8 +392,8 @@
         "English": "Nice"
     },
     {
-        "Norwegian": "Sønnen",
-        "English": "The Son"
+        "Norwegian": "Spiller",
+        "English": "Plays"
     },
     {
         "Norwegian": "Stressende",
@@ -350,6 +402,10 @@
     {
         "Norwegian": "Student",
         "English": "Student"
+    },
+    {
+        "Norwegian": "Svommer",
+        "English": "Swims"
     },
     {
         "Norwegian": "Sykepleier",
@@ -392,10 +448,6 @@
         "English": "Sorry"
     },
     {
-        "Norwegian": "Vær Så Snill",
-        "English": "Please"
-    },
-    {
         "Norwegian": "Vann",
         "English": "Water"
     },
@@ -418,5 +470,13 @@
     {
         "Norwegian": "Vin",
         "English": "Wine"
+    },
+    {
+        "Norwegian": "Vær Så Snill",
+        "English": "Please"
+    },
+    {
+        "Norwegian": "Å",
+        "English": "Oh"
     }
 ]

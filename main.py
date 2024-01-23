@@ -40,7 +40,7 @@ known_mispelled_words = [
     "vaer",
     "sonnen",
     "hoy",
-    "A" # Should be Ã
+    "a" # Should be Ã
 ]
 
 
@@ -70,6 +70,12 @@ def login():
     except Exception as e:
         logging.error(f"An unexpected error occurred: {e}")
     return lingo
+
+def custom_title_case(text):
+    words = text.lower().split()
+    capitalized_words = [word[0].upper() + word[1:] if len(word) > 0 else '' for word in words]
+    return ' '.join(capitalized_words)
+
 
 
 def translate_norwegian_to_english(text, auth_key):
@@ -183,7 +189,7 @@ def handle_known_words(lingo):
 
             try:
                 translated_text = translate_norwegian_to_english(norwegian_word, auth_key)
-                translations.append({'Norwegian': norwegian_word.title(), 'English': translated_text.title()})
+                translations.append({'Norwegian': custom_title_case(norwegian_word), 'English': custom_title_case(translated_text)})
                 logging.debug(f"Translated: {norwegian_word} -> {translated_text}")
             except Exception as e:
                 logging.error(f"Error during the translation of {norwegian_word}: {str(e)}")
@@ -207,8 +213,8 @@ def fix_and_sort_json(file_path):
     fixed_data = sorted(
         (
             {
-                'Norwegian': entry['Norwegian'].title() if 'Norwegian' in entry else '',
-                'English': entry['English'].title() if 'English' in entry else ''
+                'Norwegian': custom_title_case(entry['Norwegian']) if 'Norwegian' in entry else '',
+                'English': custom_title_case(entry['English']) if 'English' in entry else ''
             }
             for entry in data if isinstance(entry, dict) and 'Norwegian' in entry and 'English' in entry
         ),

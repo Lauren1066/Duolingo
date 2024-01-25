@@ -9,11 +9,19 @@
     },
     {
         "Norwegian": "Bare Hyggelig",
-        "English": "You'Re Welcome"
+        "English": "You're Welcome"
     },
     {
         "Norwegian": "Beklager",
         "English": "Sorry"
+    },
+    {
+        "Norwegian": "Bergen",
+        "English": "Bergen"
+    },
+    {
+        "Norwegian": "Bor",
+        "English": "Live"
     },
     {
         "Norwegian": "Bra",
@@ -32,12 +40,24 @@
         "English": "Bread"
     },
     {
+        "Norwegian": "By",
+        "English": "City"
+    },
+    {
+        "Norwegian": "Byen",
+        "English": "The City"
+    },
+    {
         "Norwegian": "Dag",
         "English": "Day"
     },
     {
         "Norwegian": "Datteren",
         "English": "The Daughter"
+    },
+    {
+        "Norwegian": "Der",
+        "English": "There"
     },
     {
         "Norwegian": "Det",
@@ -50,6 +70,10 @@
     {
         "Norwegian": "Du",
         "English": "You"
+    },
+    {
+        "Norwegian": "Dyr",
+        "English": "Expensive"
     },
     {
         "Norwegian": "Egg",
@@ -66,6 +90,10 @@
     {
         "Norwegian": "En",
         "English": "A"
+    },
+    {
+        "Norwegian": "Engelsk",
+        "English": "English"
     },
     {
         "Norwegian": "Er",
@@ -137,13 +165,11 @@
     },
     {
         "Norwegian": "Ha Det",
-        "English": "Goodbye",
-        "Type": "Casual"
+        "English": "Goodbye"
     },
     {
         "Norwegian": "Ha Det Bra",
-        "English": "Goodbye",
-        "Type": "Formal"
+        "English": "Goodbye"
     },
     {
         "Norwegian": "Hallo",
@@ -166,6 +192,10 @@
         "English": "Here"
     },
     {
+        "Norwegian": "Heter",
+        "English": "Named"
+    },
+    {
         "Norwegian": "Hun",
         "English": "She"
     },
@@ -176,6 +206,10 @@
     {
         "Norwegian": "Hunden",
         "English": "The Dog"
+    },
+    {
+        "Norwegian": "Hvem",
+        "English": "Who"
     },
     {
         "Norwegian": "Hvor",
@@ -192,6 +226,14 @@
     {
         "Norwegian": "Høy",
         "English": "Tall"
+    },
+    {
+        "Norwegian": "I",
+        "English": "In"
+    },
+    {
+        "Norwegian": "Ikke",
+        "English": "Not"
     },
     {
         "Norwegian": "Interessant",
@@ -215,7 +257,7 @@
     },
     {
         "Norwegian": "Jobben",
-        "English": "Jobs"
+        "English": "The Job"
     },
     {
         "Norwegian": "Kaffe",
@@ -242,12 +284,16 @@
         "English": "The Cat"
     },
     {
+        "Norwegian": "Kommer",
+        "English": "Come"
+    },
+    {
         "Norwegian": "Kvinnen",
         "English": "The Woman"
     },
     {
         "Norwegian": "Lager",
-        "English": "Lower"
+        "English": "Cooks"
     },
     {
         "Norwegian": "Lege",
@@ -259,7 +305,15 @@
     },
     {
         "Norwegian": "Leser",
-        "English": "Reader"
+        "English": "Reads"
+    },
+    {
+        "Norwegian": "Lite",
+        "English": "Small"
+    },
+    {
+        "Norwegian": "Liten",
+        "English": "Small"
     },
     {
         "Norwegian": "Lærer",
@@ -267,7 +321,7 @@
     },
     {
         "Norwegian": "Maler",
-        "English": "Painter"
+        "English": "Paints"
     },
     {
         "Norwegian": "Mannen",
@@ -326,6 +380,14 @@
         "English": "No"
     },
     {
+        "Norwegian": "Norge",
+        "English": "Norway"
+    },
+    {
+        "Norwegian": "Norsk",
+        "English": "Norwegian"
+    },
+    {
         "Norwegian": "Ofte",
         "English": "Often"
     },
@@ -334,16 +396,16 @@
         "English": "And"
     },
     {
+        "Norwegian": "Oslo",
+        "English": "Oslo"
+    },
+    {
         "Norwegian": "Ost",
         "English": "Cheese"
     },
     {
         "Norwegian": "Osten",
         "English": "The Cheese"
-    },
-    {
-        "Norwegian": "Pa",
-        "English": "Pa"
     },
     {
         "Norwegian": "Pizza",
@@ -390,6 +452,14 @@
         "English": "Plays"
     },
     {
+        "Norwegian": "Stor",
+        "English": "Large"
+    },
+    {
+        "Norwegian": "Stort",
+        "English": "Large"
+    },
+    {
         "Norwegian": "Stressende",
         "English": "Stressful"
     },
@@ -398,7 +468,15 @@
         "English": "Student"
     },
     {
+        "Norwegian": "Sverige",
+        "English": "Sweden"
+    },
+    {
         "Norwegian": "Svommer",
+        "English": "Swimmer"
+    },
+    {
+        "Norwegian": "Svømmer",
         "English": "Swims"
     },
     {
@@ -439,7 +517,7 @@
     },
     {
         "Norwegian": "Unnskyld",
-        "English": "Sorry"
+        "English": "Excuse Me"
     },
     {
         "Norwegian": "Vann",

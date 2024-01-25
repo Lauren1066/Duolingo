@@ -129,7 +129,8 @@
     },
     {
         "Norwegian": "God",
-        "English": "Good"
+        "English": "Good",
+        "Type": "Masculine/Feminine"
     },
     {
         "Norwegian": "God Dag",
@@ -149,7 +150,8 @@
     },
     {
         "Norwegian": "Godt",
-        "English": "Good"
+        "English": "Good",
+        "Type": "Nueter/Adverb"
     },
     {
         "Norwegian": "Gutten",
@@ -165,11 +167,13 @@
     },
     {
         "Norwegian": "Ha Det",
-        "English": "Goodbye"
+        "English": "Goodbye",
+        "Type": "Casual"
     },
     {
         "Norwegian": "Ha Det Bra",
-        "English": "Goodbye"
+        "English": "Goodbye",
+        "Type": "Formal"
     },
     {
         "Norwegian": "Hallo",
@@ -309,11 +313,13 @@
     },
     {
         "Norwegian": "Lite",
-        "English": "Small"
+        "English": "Small",
+        "Type": "Nueter/Adverb"
     },
     {
         "Norwegian": "Liten",
-        "English": "Small"
+        "English": "Small",
+        "Type": "Masuline/Feminine"
     },
     {
         "Norwegian": "Lærer",
@@ -470,10 +476,6 @@
     {
         "Norwegian": "Sverige",
         "English": "Sweden"
-    },
-    {
-        "Norwegian": "Svommer",
-        "English": "Swimmer"
     },
     {
         "Norwegian": "Svømmer",

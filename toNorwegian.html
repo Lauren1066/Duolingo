@@ -138,25 +138,26 @@
       let wordIndex = 0;
   
       document.addEventListener('DOMContentLoaded', async function() {
-          const response = await fetch('words_translations.json');
-          words = await response.json();
-          loadNewWord();
-  
-          document.getElementById('translationForm').addEventListener('submit', function(event) {
-              event.preventDefault();
-              const userTranslation = document.getElementById('userTranslation').value.trim().toLowerCase();
-              const correctTranslation = words[wordIndex].Norwegian.trim().toLowerCase();
-              
-              const feedbackElement = document.getElementById('feedback');
-              if (userTranslation === correctTranslation) {
-                  feedbackElement.textContent = 'Correct!';
-                  feedbackElement.style.color = 'green';
-                  loadNewWord();
-              } else {
-                  feedbackElement.textContent = `Incorrect. The correct translation is "${words[wordIndex].Norwegian}".`;
-                  feedbackElement.style.color = 'red';
-              }
-          });
+        const response = await fetch('words_translations.json');
+        words = await response.json();
+        loadNewWord();
+    
+        document.getElementById('translationForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const userTranslation = document.getElementById('userTranslation').value.trim().toLowerCase();
+            const correctTranslation = words[wordIndex].Norwegian.trim().toLowerCase();
+            
+            const feedbackElement = document.getElementById('feedback');
+            if (userTranslation === correctTranslation) {
+                feedbackElement.textContent = 'Correct!';
+                feedbackElement.style.color = 'green';
+                words.splice(wordIndex, 1); 
+                loadNewWord(); 
+            } else {
+                feedbackElement.textContent = `Incorrect. The correct translation is "${words[wordIndex].Norwegian}".`;
+                feedbackElement.style.color = 'red';
+            }
+        });
 
           const charButtons = document.querySelectorAll('.char-btn');
           charButtons.forEach(button => {
@@ -166,13 +167,28 @@
           });
       });
   
-      function loadNewWord() {
-          wordIndex = Math.floor(Math.random() * words.length);
-          document.getElementById('wordEnglish').value = getEnglishTranslation(words[wordIndex]);
-          document.getElementById('userTranslation').value = ''; 
-          document.getElementById('feedback').textContent = ''; 
-      }
-
+      async function loadNewWord() {
+        if (words.length > 0) {
+            wordIndex = Math.floor(Math.random() * words.length);
+            document.getElementById('wordEnglish').value = getEnglishTranslation(words[wordIndex]);
+            document.getElementById('userTranslation').value = ''; 
+            document.getElementById('feedback').textContent = ''; 
+        } else {
+            const response = await fetch('words_translations.json');
+            let allWords = await response.json();
+            words = allWords.filter(word => !usedWords.includes(word.English));
+            if (words.length > 0) {
+                wordIndex = Math.floor(Math.random() * words.length);
+                document.getElementById('wordEnglish').value = getEnglishTranslation(words[wordIndex]);
+                document.getElementById('userTranslation').value = ''; 
+                document.getElementById('feedback').textContent = ''; 
+            } else {
+                document.getElementById('wordEnglish').value = 'All words have been translated!';
+                document.getElementById('userTranslation').disabled = true; 
+                document.getElementById('feedback').textContent = ''; 
+            }
+        }
+    }
       function insertAtCursor(input, textToInsert) {
         const startPos = input.selectionStart;
         const endPos = input.selectionEnd;

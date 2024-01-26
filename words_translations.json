@@ -1,131 +1,168 @@
 [
     {
         "Norwegian": "Aldri",
-        "English": "Never"
+        "English": "Never",
+        "Type": null
     },
     {
         "Norwegian": "Av Og Til",
-        "English": "Sometimes"
+        "English": "Sometimes",
+        "Type": null
     },
     {
         "Norwegian": "Bare Hyggelig",
-        "English": "You're Welcome"
+        "English": "You're Welcome",
+        "Type": null
     },
     {
         "Norwegian": "Beklager",
-        "English": "Sorry"
+        "English": "Sorry",
+        "Type": null
     },
     {
         "Norwegian": "Bergen",
-        "English": "Bergen"
+        "English": "Bergen",
+        "Type": null
     },
     {
         "Norwegian": "Bor",
-        "English": "Live"
+        "English": "Live",
+        "Type": null
     },
     {
         "Norwegian": "Bra",
-        "English": "Alright"
+        "English": "Alright",
+        "Type": null
     },
     {
         "Norwegian": "Bror",
-        "English": "Brother"
+        "English": "Brother",
+        "Type": null
     },
     {
         "Norwegian": "Broren",
-        "English": "The Brother"
+        "English": "The Brother",
+        "Type": null
     },
     {
         "Norwegian": "Brød",
-        "English": "Bread"
+        "English": "Bread",
+        "Type": null
     },
     {
         "Norwegian": "By",
-        "English": "City"
+        "English": "City",
+        "Type": null
     },
     {
         "Norwegian": "Byen",
-        "English": "The City"
+        "English": "The City",
+        "Type": null
     },
     {
         "Norwegian": "Dag",
-        "English": "Day"
+        "English": "Day",
+        "Type": null
     },
     {
         "Norwegian": "Datteren",
-        "English": "The Daughter"
+        "English": "The Daughter",
+        "Type": null
     },
     {
         "Norwegian": "Der",
-        "English": "There"
+        "English": "There",
+        "Type": null
     },
     {
         "Norwegian": "Det",
-        "English": "It"
+        "English": "It",
+        "Type": null
     },
     {
         "Norwegian": "Din",
-        "English": "Your"
+        "English": "Your",
+        "Type": null
     },
     {
         "Norwegian": "Du",
-        "English": "You"
+        "English": "You",
+        "Type": null
     },
     {
         "Norwegian": "Dyr",
-        "English": "Expensive"
+        "English": "Expensive",
+        "Type": null
     },
     {
         "Norwegian": "Egg",
-        "English": "Egg"
+        "English": "Egg",
+        "Type": null
     },
     {
         "Norwegian": "Egget",
-        "English": "The Egg"
+        "English": "The Egg",
+        "Type": null
     },
     {
         "Norwegian": "Eller",
-        "English": "Or"
+        "English": "Or",
+        "Type": null
     },
     {
         "Norwegian": "En",
-        "English": "A"
+        "English": "A",
+        "Type": null
     },
     {
         "Norwegian": "Engelsk",
-        "English": "English"
+        "English": "English",
+        "Type": null
     },
     {
         "Norwegian": "Er",
-        "English": "Is"
+        "English": "Is",
+        "Type": null
     },
     {
         "Norwegian": "Et",
-        "English": "An"
+        "English": "An",
+        "Type": null
     },
     {
         "Norwegian": "Far",
-        "English": "Father"
+        "English": "Father",
+        "Type": null
     },
     {
         "Norwegian": "Faren",
-        "English": "The Father"
+        "English": "The Father",
+        "Type": null
     },
     {
         "Norwegian": "Fisk",
-        "English": "Fish"
+        "English": "Fish",
+        "Type": null
     },
     {
         "Norwegian": "Fisken",
-        "English": "The Fish"
+        "English": "The Fish",
+        "Type": null
     },
     {
         "Norwegian": "For",
-        "English": "Too"
+        "English": "Too",
+        "Type": null
+    },
+    {
+        "Norwegian": "Forstår",
+        "English": "Understand",
+        "Type": null
     },
     {
         "Norwegian": "Gitar",
-        "English": "Guitar"
+        "English": "Guitar",
+        "Type": null
     },
     {
         "Norwegian": "God",
@@ -134,19 +171,23 @@
     },
     {
         "Norwegian": "God Dag",
-        "English": "Good Afternoon"
+        "English": "Good Afternoon",
+        "Type": null
     },
     {
         "Norwegian": "God Helg",
-        "English": "Good Weekend"
+        "English": "Good Weekend",
+        "Type": null
     },
     {
         "Norwegian": "God Kveld",
-        "English": "Good Evening"
+        "English": "Good Evening",
+        "Type": null
     },
     {
         "Norwegian": "God Morgen",
-        "English": "Good Morning"
+        "English": "Good Morning",
+        "Type": null
     },
     {
         "Norwegian": "Godt",
@@ -155,15 +196,18 @@
     },
     {
         "Norwegian": "Gutten",
-        "English": "The Boy"
+        "English": "The Boy",
+        "Type": null
     },
     {
         "Norwegian": "Går Det Bra",
-        "English": "Are You Alright?"
+        "English": "Are You Alright?",
+        "Type": null
     },
     {
         "Norwegian": "Går Det Bra Med Deg",
-        "English": "Are You Doing Alright?"
+        "English": "Are You Doing Alright?",
+        "Type": null
     },
     {
         "Norwegian": "Ha Det",
@@ -177,139 +221,178 @@
     },
     {
         "Norwegian": "Hallo",
-        "English": "Hello"
+        "English": "Hello",
+        "Type": null
     },
     {
         "Norwegian": "Han",
-        "English": "He"
+        "English": "He",
+        "Type": null
     },
     {
         "Norwegian": "Har",
-        "English": "Have"
+        "English": "Have",
+        "Type": null
     },
     {
         "Norwegian": "Hei",
-        "English": "Hi"
+        "English": "Hi",
+        "Type": null
     },
     {
         "Norwegian": "Her",
-        "English": "Here"
+        "English": "Here",
+        "Type": null
     },
     {
         "Norwegian": "Heter",
-        "English": "Named"
+        "English": "Named",
+        "Type": null
     },
     {
         "Norwegian": "Hun",
-        "English": "She"
+        "English": "She",
+        "Type": null
     },
     {
         "Norwegian": "Hund",
-        "English": "Dog"
+        "English": "Dog",
+        "Type": null
     },
     {
         "Norwegian": "Hunden",
-        "English": "The Dog"
+        "English": "The Dog",
+        "Type": null
     },
     {
         "Norwegian": "Hvem",
-        "English": "Who"
+        "English": "Who",
+        "Type": null
     },
     {
         "Norwegian": "Hvor",
-        "English": "Where"
+        "English": "Where",
+        "Type": null
     },
     {
         "Norwegian": "Hvordan Går Det",
-        "English": "How Are You?"
+        "English": "How Are You?",
+        "Type": null
+    },
+    {
+        "Norwegian": "Hvorfor",
+        "English": "Why",
+        "Type": null
     },
     {
         "Norwegian": "Hører",
-        "English": "Listens"
+        "English": "Listens",
+        "Type": null
     },
     {
         "Norwegian": "Høy",
-        "English": "Tall"
+        "English": "Tall",
+        "Type": null
     },
     {
         "Norwegian": "I",
-        "English": "In"
+        "English": "In",
+        "Type": null
     },
     {
         "Norwegian": "Ikke",
-        "English": "Not"
+        "English": "Not",
+        "Type": null
     },
     {
         "Norwegian": "Interessant",
-        "English": "Interesting"
+        "English": "Interesting",
+        "Type": null
     },
     {
         "Norwegian": "Ja",
-        "English": "Yes"
+        "English": "Yes",
+        "Type": null
     },
     {
         "Norwegian": "Jeg",
-        "English": "I"
+        "English": "I",
+        "Type": null
     },
     {
         "Norwegian": "Jenta",
-        "English": "The Girl"
+        "English": "The Girl",
+        "Type": null
     },
     {
         "Norwegian": "Jobb",
-        "English": "Job"
+        "English": "Job",
+        "Type": null
     },
     {
         "Norwegian": "Jobben",
-        "English": "The Job"
+        "English": "The Job",
+        "Type": null
     },
     {
         "Norwegian": "Kaffe",
-        "English": "Coffee"
+        "English": "Coffee",
+        "Type": null
     },
     {
         "Norwegian": "Kaffen",
-        "English": "The Coffee"
+        "English": "The Coffee",
+        "Type": null
     },
     {
         "Norwegian": "Kald",
-        "English": "Cold"
+        "English": "Cold",
+        "Type": null
     },
     {
         "Norwegian": "Kanskje",
-        "English": "Maybe"
+        "English": "Maybe",
+        "Type": null
     },
     {
         "Norwegian": "Katt",
-        "English": "Cat"
+        "English": "Cat",
+        "Type": null
     },
     {
         "Norwegian": "Katten",
-        "English": "The Cat"
+        "English": "The Cat",
+        "Type": null
     },
     {
         "Norwegian": "Kommer",
-        "English": "Come"
+        "English": "Come",
+        "Type": null
     },
     {
         "Norwegian": "Kvinnen",
-        "English": "The Woman"
+        "English": "The Woman",
+        "Type": null
     },
     {
         "Norwegian": "Lager",
-        "English": "Cooks"
+        "English": "Cooks",
+        "Type": null
     },
     {
         "Norwegian": "Lege",
-        "English": "Doctor"
+        "English": "Doctor",
+        "Type": null
     },
     {
         "Norwegian": "Legen",
-        "English": "The Doctor"
+        "English": "The Doctor",
+        "Type": null
     },
     {
         "Norwegian": "Leser",
-        "English": "Reads"
+        "English": "Reads",
+        "Type": null
     },
     {
         "Norwegian": "Lite",
@@ -323,234 +406,302 @@
     },
     {
         "Norwegian": "Lærer",
-        "English": "Teacher"
+        "English": "Teacher",
+        "Type": null
     },
     {
         "Norwegian": "Maler",
-        "English": "Paints"
+        "English": "Paints",
+        "Type": null
     },
     {
         "Norwegian": "Mannen",
-        "English": "The Man"
+        "English": "The Man",
+        "Type": null
     },
     {
         "Norwegian": "Maten",
-        "English": "The Food"
+        "English": "The Food",
+        "Type": null
     },
     {
         "Norwegian": "Med",
-        "English": "With"
+        "English": "With",
+        "Type": null
     },
     {
         "Norwegian": "Melk",
-        "English": "Milk"
+        "English": "Milk",
+        "Type": null
     },
     {
         "Norwegian": "Men",
-        "English": "But"
+        "English": "But",
+        "Type": null
     },
     {
         "Norwegian": "Meny",
-        "English": "Menu"
+        "English": "Menu",
+        "Type": null
     },
     {
         "Norwegian": "Menyen",
-        "English": "The Menu"
+        "English": "The Menu",
+        "Type": null
     },
     {
         "Norwegian": "Mer",
-        "English": "More"
+        "English": "More",
+        "Type": null
     },
     {
         "Norwegian": "Min",
-        "English": "My"
+        "English": "My",
+        "Type": null
     },
     {
         "Norwegian": "Mor",
-        "English": "Mother"
+        "English": "Mother",
+        "Type": null
     },
     {
         "Norwegian": "Moren",
-        "English": "The Mother"
+        "English": "The Mother",
+        "Type": null
     },
     {
         "Norwegian": "Morsom",
-        "English": "Funny"
+        "English": "Funny",
+        "Type": null
     },
     {
         "Norwegian": "Musikk",
-        "English": "Music"
+        "English": "Music",
+        "Type": null
     },
     {
         "Norwegian": "Nei",
-        "English": "No"
+        "English": "No",
+        "Type": null
     },
     {
         "Norwegian": "Norge",
-        "English": "Norway"
+        "English": "Norway",
+        "Type": null
     },
     {
         "Norwegian": "Norsk",
-        "English": "Norwegian"
+        "English": "Norwegian",
+        "Type": null
     },
     {
         "Norwegian": "Ofte",
-        "English": "Often"
+        "English": "Often",
+        "Type": null
     },
     {
         "Norwegian": "Og",
-        "English": "And"
+        "English": "And",
+        "Type": null
+    },
+    {
+        "Norwegian": "Ok",
+        "English": "Ok",
+        "Type": null
     },
     {
         "Norwegian": "Oslo",
-        "English": "Oslo"
+        "English": "Oslo",
+        "Type": null
     },
     {
         "Norwegian": "Ost",
-        "English": "Cheese"
+        "English": "Cheese",
+        "Type": null
     },
     {
         "Norwegian": "Osten",
-        "English": "The Cheese"
+        "English": "The Cheese",
+        "Type": null
     },
     {
         "Norwegian": "Pizza",
-        "English": "Pizza"
+        "English": "Pizza",
+        "Type": null
     },
     {
         "Norwegian": "Pizzaen",
-        "English": "The Pizza"
+        "English": "The Pizza",
+        "Type": null
     },
     {
         "Norwegian": "Professor",
-        "English": "Professor"
+        "English": "Professor",
+        "Type": null
     },
     {
         "Norwegian": "På",
-        "English": "To"
+        "English": "To",
+        "Type": null
     },
     {
         "Norwegian": "Regningen",
-        "English": "The Bill"
+        "English": "The Bill",
+        "Type": null
     },
     {
         "Norwegian": "Restaurant",
-        "English": "Restaurant"
+        "English": "Restaurant",
+        "Type": null
     },
     {
         "Norwegian": "Restauranten",
-        "English": "The Restaurant"
+        "English": "The Restaurant",
+        "Type": null
     },
     {
         "Norwegian": "Salaten",
-        "English": "The Salad"
+        "English": "The Salad",
+        "Type": null
     },
     {
         "Norwegian": "Smart",
-        "English": "Smart"
+        "English": "Smart",
+        "Type": null
     },
     {
         "Norwegian": "Snill",
-        "English": "Nice"
+        "English": "Nice",
+        "Type": null
     },
     {
         "Norwegian": "Spiller",
-        "English": "Plays"
+        "English": "Plays",
+        "Type": null
     },
     {
         "Norwegian": "Stor",
-        "English": "Large"
+        "English": "Large",
+        "Type": "Masculine/Feminine"
     },
     {
         "Norwegian": "Stort",
-        "English": "Large"
+        "English": "Large",
+        "Type": "Neuter/Adverb"
     },
     {
         "Norwegian": "Stressende",
-        "English": "Stressful"
+        "English": "Stressful",
+        "Type": null
     },
     {
         "Norwegian": "Student",
-        "English": "Student"
+        "English": "Student",
+        "Type": null
     },
     {
         "Norwegian": "Sverige",
-        "English": "Sweden"
+        "English": "Sweden",
+        "Type": null
     },
     {
         "Norwegian": "Svømmer",
-        "English": "Swims"
+        "English": "Swims",
+        "Type": null
     },
     {
         "Norwegian": "Sykepleier",
-        "English": "Nurse"
+        "English": "Nurse",
+        "Type": null
     },
     {
         "Norwegian": "Sønnen",
-        "English": "The Son"
+        "English": "The Son",
+        "Type": null
     },
     {
         "Norwegian": "Søster",
-        "English": "Sister"
+        "English": "Sister",
+        "Type": null
     },
     {
         "Norwegian": "Søsteren",
-        "English": "The Sister"
+        "English": "The Sister",
+        "Type": null
     },
     {
         "Norwegian": "Takk",
-        "English": "Thanks"
+        "English": "Thanks",
+        "Type": null
     },
     {
         "Norwegian": "Te",
-        "English": "Tea"
+        "English": "Tea",
+        "Type": null
     },
     {
         "Norwegian": "Teen",
-        "English": "The Tea"
+        "English": "The Tea",
+        "Type": null
     },
     {
         "Norwegian": "Tusen Takk",
-        "English": "Thank You Very Much"
+        "English": "Thank You Very Much",
+        "Type": null
     },
     {
         "Norwegian": "Ung",
-        "English": "Young"
+        "English": "Young",
+        "Type": null
     },
     {
         "Norwegian": "Unnskyld",
-        "English": "Excuse Me"
+        "English": "Excuse Me",
+        "Type": null
     },
     {
         "Norwegian": "Vann",
-        "English": "Water"
+        "English": "Water",
+        "Type": null
     },
     {
         "Norwegian": "Vanskelig",
-        "English": "Difficult"
+        "English": "Difficult",
+        "Type": null
     },
     {
         "Norwegian": "Varm",
-        "English": "Warm"
+        "English": "Warm",
+        "Type": null
     },
     {
         "Norwegian": "Veldig",
-        "English": "Very"
+        "English": "Very",
+        "Type": null
     },
     {
         "Norwegian": "Velkommen",
-        "English": "Welcome"
+        "English": "Welcome",
+        "Type": null
+    },
+    {
+        "Norwegian": "Vet",
+        "English": "Fat",
+        "Type": null
     },
     {
         "Norwegian": "Vin",
-        "English": "Wine"
+        "English": "Wine",
+        "Type": null
     },
     {
         "Norwegian": "Vær Så Snill",
-        "English": "Please"
+        "English": "Please",
+        "Type": null
     },
     {
         "Norwegian": "Å",
-        "English": "Oh"
+        "English": "Oh",
+        "Type": null
     }
 ]

@@ -217,7 +217,8 @@ def fix_and_sort_json(file_path):
         (
             {
                 'Norwegian': custom_title_case(entry['Norwegian']) if 'Norwegian' in entry else '',
-                'English': custom_title_case(entry['English']) if 'English' in entry else ''
+                'English': custom_title_case(entry['English']) if 'English' in entry else '',
+                'Type': entry['Type'] if 'Type' in entry else None
             }
             for entry in data if isinstance(entry, dict) and 'Norwegian' in entry and 'English' in entry
         ),
